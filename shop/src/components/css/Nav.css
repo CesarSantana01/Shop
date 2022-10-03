@@ -1,0 +1,37 @@
+
+
+
+@media (max-width:900px){
+.link_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 7vh;
+
+    background-image: url("https://logos-world.net/wp-content/uploads/2021/08/Genesis-Logo.png");
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.426));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 150%;
+
+    }
+}
+
+@media (min-width:901px){
+.link_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 8vh;
+
+    background-image: url("https://logos-world.net/wp-content/uploads/2021/08/Genesis-Logo.png");
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.466));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 160%;
+
+
+    }
+}

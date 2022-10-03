@@ -1,0 +1,39 @@
+body{
+  position: absolute;
+  
+
+  color: white;
+  animation:fadeInAnimation ease-in .1s;
+}
+
+@media (max-width:900px) {
+    .Home{
+      width: 100vw;
+      height: 90vh;
+
+      background-image: url("../img/mobileHomepage.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    
+    }
+    }
+
+@media (min-width:901px){
+    .Home{
+      width: 100vw;
+      height: 90vh;
+
+      background-image: url("../img/desktopHomepage.jpeg");
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+    }
+    }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
