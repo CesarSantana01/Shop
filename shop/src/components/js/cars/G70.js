@@ -2,13 +2,22 @@ import React, {useState, useEffect} from 'react'
 import "../../css/Car.css"
 import g70_1 from "../../img/g70-1.jpeg"
 import g70_1blur from "../../img/g70-1blur.jpg"
-
+import { cartList } from '../Cart'
 
 function G70() {
-
     const [btcPrice, setBtcPrice] = useState(0)
     const [ethPrice, setEthPrice] = useState(0)
     const carPrice = 39150
+
+
+function addToCart(){
+    cartList.push({
+        name:"G70",
+        brand:"Genesis",
+        price:"37000"
+    })
+    console.log(cartList)
+}
 
     useEffect(() => {
 
@@ -61,7 +70,7 @@ function G70() {
         </div>
       <div className='payment'>
         <div className='payment-container'>
-            <button style={{marginBottom:"3vh"}} className='payment-button'>
+            <button style={{marginBottom:"3vh"}} className='payment-button' onClick={() => {addToCart()}}>
                 <div>Add to  <span style={{fontStyle:"italic", fontWeight:"bold"}}>Cart</span></div>
                 <div className='button-text'></div>
             </button>
