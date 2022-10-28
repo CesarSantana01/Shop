@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import "../../css/Car.css"
 import g70_1 from "../../img/g70-1.jpeg"
 import g70_1blur from "../../img/g70-1blur.jpg"
+import g70 from "../../img/G70.png"
 import { cartList } from '../Cart'
 
 function G70() {
@@ -11,12 +12,13 @@ function G70() {
 
 
 function addToCart(){
+    
     cartList.push({
         name:"G70",
         brand:"Genesis",
-        price:"37000"
+        price:carPrice,
+        img: `${g70}`
     })
-    console.log(cartList)
 }
 
     useEffect(() => {

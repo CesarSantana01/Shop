@@ -2,20 +2,25 @@ import React, {useState, useEffect} from 'react'
 import "../../css/Car.css"
 import porsche911_1 from "../../img/porsche911-1.jpeg"
 import porsche911_1blur from "../../img/porsche911-1blur.jpg"
+import porsche from "../../img/Porsche911.png"
+import { cartList } from '../Cart'
+
 
 
 function Porche911() {
 
     const [btcPrice, setBtcPrice] = useState(0)
     const [ethPrice, setEthPrice] = useState(0)
-
-
-
-
-
     const carPrice = 106100
     
-    
+    function addToCart(){
+        cartList.push({
+            name:"911 Turbo S",
+            brand:"Porsche",
+            price:carPrice,
+            img: `${porsche}`,
+        })
+    }
 
     useEffect(() => {
 
@@ -68,7 +73,7 @@ function Porche911() {
         </div>
       <div className='payment'>
         <div className='payment-container'>
-            <button style={{marginBottom:"3vh"}} className='payment-button'>
+            <button style={{marginBottom:"3vh"}} className='payment-button' onClick={() => {addToCart()}}>
                 <div>Add to  <span style={{fontStyle:"italic", fontWeight:"bold"}}>Cart</span></div>
                 <div className='button-text'></div>
             </button>

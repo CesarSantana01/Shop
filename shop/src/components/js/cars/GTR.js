@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import "../../css/Car.css"
+import gtr from "../../img/Gtr.png"
 import gtr_1 from "../../img/gtr-1.jpeg"
 import gtr_1blur from "../../img/gtr-1blur.jpg"
+import { cartList } from '../Cart'
+
 
 
 function GTR() {
@@ -9,6 +12,15 @@ function GTR() {
     const [btcPrice, setBtcPrice] = useState(0)
     const [ethPrice, setEthPrice] = useState(0)
     const carPrice = 113540
+
+    function addToCart(){
+        cartList.push({
+            name:"GTR",
+            brand:"Nissam",
+            price: carPrice,
+            img: `${gtr}`
+        })
+    }
     
     useEffect(() => {
 
@@ -61,7 +73,7 @@ function GTR() {
         </div>
       <div className='payment'>
         <div className='payment-container'>
-            <button style={{marginBottom:"3vh"}} className='payment-button'>
+            <button style={{marginBottom:"3vh"}} className='payment-button' onClick={() => {addToCart()}}>
                 <div>Add to  <span style={{fontStyle:"italic", fontWeight:"bold"}}>Cart</span></div>
                 <div className='button-text'></div>
             </button>

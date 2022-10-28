@@ -5,6 +5,8 @@ body{
 .cart-flex{
     display: flex;
     margin: 5vw;
+    gap:7vw;
+
 }
 
 .cart-intro{
@@ -19,29 +21,27 @@ body{
 }
 
 .cart-item-list>div{
-    background-color: grey;
     display: flex;
 }
-
-.login{
-    background-color: purple;
-    width: 40vw;
+.cart-item-list>button{
+    color: white;
 }
 
 .cart-imgcontainer{
-    width: 50%;
+    width: 55%;
 }
 
 .cart-img{
     height: 20vh;
     width: 100%;
+    padding: .5vh;
 }
 
 .cart-item-desc{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 45%;
 }
 
 .cart-item-desc>div:first-child{
@@ -58,4 +58,72 @@ body{
     border-top: 2px white solid;
     font-size: 2vh;
 }
+button{
+    width:2vh;
+    height: 2vh;
+    height: fit-content;
+    font-size: 2vh;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width:max-content;
+    height: max-content;
+    
+    right: 10vw;
+}
+
+
+.checkout-contact{
+    display: flex;
+    flex-direction: column;
+    gap: .2vh;
+    margin-top: 2vh;
+}
+
+.cart-submit{
+    width: max-content;
+    height: max-content;
+    padding: .5vh;
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 0;
+    transition: .2s ease;
+}
+
+.cart-submit:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.653);
+}
+
+input{
+    height: 3vh;
+    border: none;
+    margin: 1px;
+    background-color: transparent;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.5vh;
+}
+input:focus{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
 

@@ -2,6 +2,10 @@ import React, {useState, useEffect} from 'react'
 import "../../css/Car.css"
 import maybach_1 from "../../img/maybach-1.jpeg"
 import maybach_1blur from "../../img/maybach-1blur.jpg"
+import maybach from "../../img/Maybach.png"
+import { cartList } from '../Cart'
+import Amggt from './Amggt'
+
 
 
 function Maybach() {
@@ -9,6 +13,15 @@ function Maybach() {
     const [btcPrice, setBtcPrice] = useState(0)
     const [ethPrice, setEthPrice] = useState(0)
     const carPrice = 185000
+
+    function addToCart(){
+        cartList.push({
+            name:"Maybach",
+            brand:"Mercedes",
+            price:carPrice,
+            img: `${maybach}`,
+        })
+    }
 
     useEffect(() => {
 
@@ -61,7 +74,7 @@ function Maybach() {
         </div>
       <div className='payment'>
         <div className='payment-container'>
-            <button style={{marginBottom:"3vh"}} className='payment-button'>
+            <button style={{marginBottom:"3vh"}} className='payment-button' onClick={() => {addToCart()}}>
                 <div>Add to  <span style={{fontStyle:"italic", fontWeight:"bold"}}>Cart</span></div>
                 <div className='button-text'></div>
             </button>

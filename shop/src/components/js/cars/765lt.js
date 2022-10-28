@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react'
 import "../../css/Car.css"
 import lt_1 from "../../img/lt-1.jpeg"
 import lt_1blur from "../../img/lt-1blur.jpg"
+import Mclaren from "../../img/McLaren765Lt.png"
+import { cartList } from '../Cart'
+
 
 
 function LT() {
@@ -9,6 +12,15 @@ function LT() {
     const [btcPrice, setBtcPrice] = useState(0)
     const [ethPrice, setEthPrice] = useState(0)
     const carPrice = 382500
+
+    function addToCart(){
+        cartList.push({
+            name:"765 LT",
+            brand:"McLaren",
+            price:carPrice,
+            img: `${Mclaren}`,
+        })
+    }
 
     useEffect(() => {
 
@@ -61,7 +73,7 @@ function LT() {
         </div>
       <div className='payment'>
         <div className='payment-container'>
-            <button style={{marginBottom:"3vh"}} className='payment-button'>
+            <button style={{marginBottom:"3vh"}} className='payment-button' onClick={() => {addToCart()}}>
                 <div>Add to  <span style={{fontStyle:"italic", fontWeight:"bold"}}>Cart</span></div>
                 <div className='button-text'></div>
             </button>

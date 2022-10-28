@@ -111,7 +111,7 @@ function Shop() {
          style={{backgroundImage: `url(${Porsche911})`,  }}>
             <div>
               <p className='year'>2023</p>
-              <p className='model'>911</p>
+              <p className='model'>911 Turbo S</p>
             </div>
             <div className='end'>
               <p className='msrp'>MSRP</p>

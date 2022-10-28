@@ -27,7 +27,7 @@ function RoutesAnimation() {
     
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path='/' exact element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
          
             <Route path='/shop' element={<React.Suspense fallback={"Loading..."}><LazyShop/></React.Suspense>}/>
           
