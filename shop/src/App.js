@@ -4,6 +4,7 @@ import {HashRouter, Routes, Route} from 'react-router-dom'
 import Nav from './components/js/Nav';
 import RoutesAnimation from './components/js/RoutesAnimation';
 
+document.title = "Exoticar"
 
 
 
