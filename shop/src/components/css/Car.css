@@ -41,6 +41,8 @@
     }
 }
 
+
+
 .car-info{
     display: flex;
     width: 100vw;
@@ -97,7 +99,11 @@
     border: none;
 
     transition: ease .4s;
+}
 
+.payment-container>button{
+    display: flex;
+    flex-direction: column;
 }
 
 .button-text{

@@ -28,14 +28,16 @@ function Cart() {
       newCartList.map(item => (
         
         <div key={item.name}>
-        <div className='cart-imgcontainer'><img className='cart-img' src={item.img} alt='' /></div>
+        <div className='cart-imgcontainer'>
+          <img className='cart-img' src={item.img} alt='' />
+        </div>
         <div className='cart-item-desc'>
           <div>
             <div style={{fontSize: "3vh"}}>{item.name}</div>
             <div style={{fontSize: "2vh"}}>{item.brand}</div>
             <div style={{fontSize: "2vh", display: "flex", alignItems: "center"}}>
               Quantity
-              <button style={{paddingBottom:"5px", fontSize: "2.4vh", color: 'white'}}
+              <button style={{paddingBottom:"5px", fontSize: "5vh", color: 'white'}}
               onClick={() => {
               
                 setNewCartList(newCartList)
@@ -48,15 +50,10 @@ function Cart() {
                 setReRender(reRender => reRender-1)
                 newCartList.forEach(e => {
                   if(e["quantity"]<1){
-                   
-
                     let index = e
                     let findex = newCartList.findIndex(el => el == index)
                     console.log(` ${findex}`)
-
                     newCartList.splice(findex,1)
-
-                  
                     cartList.splice(findex,1)
                     console.log(cartList)
                   }
@@ -64,7 +61,7 @@ function Cart() {
               }
               }}>-</button>
               {item.quantity}
-              <button style={{color:'white'}} onClick={() => {
+              <button style={{color:'white', fontSize: "3vh"}} onClick={() => {
                 setNewCartList(newCartList)
                 item['quantity'] = item['quantity'] + 1 || 1
                 setReRender(reRender => reRender+1)
@@ -132,7 +129,7 @@ function Cart() {
     <div className='cart-flex'>
       <div className='cart-item-list'>{createCartRender()}
         <div className='cart-cost'>
-          <div style={{marginLeft: "auto", paddingRight: "1vh"}}>Total:$ {numberWithCommas(total)}</div>
+          <div style={{marginLeft: "auto", paddingRight: "1vh", marginTop: "1vh"}}>Total:$ {numberWithCommas(total)}</div>
         </div>
       </div>
 
