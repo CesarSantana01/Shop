@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/carshop/static/css/main.dbd866e5.css",
-    "main.js": "/carshop/static/js/main.95fc43b9.js",
+    "main.css": "/carshop/static/css/main.bd2e875a.css",
+    "main.js": "/carshop/static/js/main.7b70cad1.js",
     "static/js/320.d97082aa.chunk.js": "/carshop/static/js/320.d97082aa.chunk.js",
     "static/js/787.23170c61.chunk.js": "/carshop/static/js/787.23170c61.chunk.js",
     "static/media/gtr-1.jpeg": "/carshop/static/media/gtr-1.b3dfa4892ce23c41b829.jpeg",
@@ -31,13 +31,13 @@
     "static/media/mobileHomepage.jpg": "/carshop/static/media/mobileHomepage.11b08fc109d2746a7bde.jpg",
     "static/media/porsche911-1blur.jpg": "/carshop/static/media/porsche911-1blur.9d4860704a82de3648fd.jpg",
     "index.html": "/carshop/index.html",
-    "main.dbd866e5.css.map": "/carshop/static/css/main.dbd866e5.css.map",
-    "main.95fc43b9.js.map": "/carshop/static/js/main.95fc43b9.js.map",
+    "main.bd2e875a.css.map": "/carshop/static/css/main.bd2e875a.css.map",
+    "main.7b70cad1.js.map": "/carshop/static/js/main.7b70cad1.js.map",
     "320.d97082aa.chunk.js.map": "/carshop/static/js/320.d97082aa.chunk.js.map",
     "787.23170c61.chunk.js.map": "/carshop/static/js/787.23170c61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbd866e5.css",
-    "static/js/main.95fc43b9.js"
+    "static/css/main.bd2e875a.css",
+    "static/js/main.7b70cad1.js"
   ]
 }
